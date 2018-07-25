@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>旋转3d图片木马</title>
+    <link rel="stylesheet" href="css/base.css" />
+</head>
+
+<body>
+    <div class="stage">
+        <div class="container" onclick="main()">
+            <img src="images/1.jpg" alt="" style="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.png" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/8.jpg" alt="">
+            <img src="images/9.gif" alt="">
+        </div>
+    </div>
+    <script type="text/javascript">
+    var angle = 0;
+    var main = function() {
+        angle += 40;
+        var obj = document.getElementsByClassName('container')[0];
+        obj.style.transform = "rotateY(" + angle + "deg)";
+    }
+    </script>
+</body>
+
+</html>
